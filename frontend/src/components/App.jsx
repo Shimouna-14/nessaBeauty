@@ -24,7 +24,7 @@ const Stone = styled.img`
 `
 
 const Presention = styled.section`
-  background-color: #ddccc5;
+  background-color: #DDCCC5;
   width: 100%;
   height: 26em;
   display: flex;
@@ -60,10 +60,6 @@ const H2 = styled.h2`
   @media screen and (max-width: 600px) {width: 85%;}
 `
 
-const Tarif = styled.section`
-
-`
-
 function App() {
   return (
     <div>
@@ -72,16 +68,12 @@ function App() {
         <Div>
           <Stone src={ImgStone} alt='3d stepping stones in the ocean at sunset' />
         </Div>
-        <Presention>
+        <Presention className="bgLeaf">
           <TxtPresentation>
             <H1>Esthéticienne à domicile sur la commune Écouen</H1>
-            <H2>Professionnelle de la beauté depuis 2006, forte de mon expérience,
-              je vous propose des soins visage et corps, épilation.</H2>
+            <H2>Professionnelle de la beauté depuis 2006, forte de mon expérience, je vous propose des soins visage et corps, épilation.</H2>
           </TxtPresentation>
         </Presention>
-        <Tarif>
-
-        </Tarif>
       </main>
       <Footer></Footer>
     </div>
