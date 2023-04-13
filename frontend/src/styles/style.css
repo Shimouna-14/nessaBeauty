@@ -1,4 +1,16 @@
-.beige{
+.beige {
     color: #ddccc5;
     font-size: 1.8em;
+}
+
+@font-face {
+    font-family: "MonteCarlo";
+    src: url('../font/monteCarlo/MonteCarlo-Regular.ttf');
+    format: 'tff'
+}
+
+@font-face {
+    font-family: 'Abhaya';
+    src: url('../font/abhaya-libre/AbhayaLibre-Regular.ttf');
+    format: 'tff'
 }
