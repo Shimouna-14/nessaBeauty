@@ -1,6 +1,7 @@
 .beige {
     color: #ddccc5;
     font-size: 1.8em;
+    padding-left: 40px;
 }
 
 @font-face {
@@ -14,3 +15,24 @@
     src: url('../font/abhaya-libre/AbhayaLibre-Regular.ttf');
     format: 'tff'
 }
+
+h1, h2 { font-weight: lighter;}
+
+div > section:nth-child(1) > p:nth-child(1) { font-size: 1.6em; }
+
+div > section:nth-child(2) > p:nth-child(1) {
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+
+div > section:nth-child(2) > p:nth-child(2) {
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+div > section:nth-child(2) > p:nth-child(3) {
+    margin-top: 33px;
+    margin-bottom: 9px;
+}
+
+div > section:nth-child(2) > p:nth-child(4) { margin-top: 0; }

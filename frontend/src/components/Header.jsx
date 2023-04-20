@@ -4,13 +4,13 @@ import Logo from '../images/logo.png'
 import { useState } from 'react'
 import IconChevron from '../images/chevron-down-solid.webp'
 
-const Header = styled.header`
+const Head = styled.header`
     background-color: #16212E;
     height: 11em;
     display: flex;
     justify-content: center;
     @media screen and (max-width: 600px) {
-        height: 9em;
+        height: 7em;
     }
 `
 
@@ -41,8 +41,7 @@ const MenuMobile = styled.div`
         background-color: #16212E;
         position: absolute;
         left: 0;
-        top: 8em;
-        padding: 0 40px;
+        top: 7em;
         z-index: 2;
     }
 `
@@ -71,11 +70,11 @@ const Margin = styled.p`
     }
 `
 
-function Headerer() {
+function Header() {
     const [isOpen, setIsOpen] = useState(true)
 
     return (
-        <Header>
+        <Head>
             <Div>
                 <nav>
                     {isOpen ? (
@@ -87,21 +86,19 @@ function Headerer() {
                             <Chevron src={IconChevron} alt="Icon chevron down solid" onClick={() => setIsOpen(true)} />
                             <MenuMobile>
                                 <p className='beige'>Accueil</p>
-                                <p className='beige'>Services</p>
                                 <p className='beige'>Prestations</p>
                             </MenuMobile>
                         </>
                     )}
                     <Menu>
                         <p className='beige'>Accueil</p>
-                        <Margin className='beige'>Services</Margin>
-                        <p className='beige'>Prestations</p>
+                        <Margin className='beige'>Prestations</Margin>
                     </Menu>
                 </nav>
                 <Img className='logo' src={Logo} alt='Logo Nessa Beauty' />
             </Div>
-        </Header>
+        </Head>
     )
 }
 
-export default Headerer;
+export default Header;
