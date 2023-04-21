@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from 'react-router-dom'
 
 const Foot = styled.footer`
     height: 22em;
@@ -12,18 +13,14 @@ const Row = styled.div`
     display: flex;
     justify-content: space-around;
     align-items: center;
-    @media screen and (max-width: 600px) {
-        flex-direction: column-reverse;
-    }
+    @media screen and (max-width: 600px) { flex-direction: column-reverse; }
 `
 
 const Maps = styled.iframe`
 `
 
 const Section = styled.section`
-        @media screen and (max-width: 600px) {
-            text-align: center;
-        }
+    @media screen and (max-width: 600px) { text-align: center; }
 `
 
 const Center = styled.p`
@@ -50,7 +47,7 @@ function Footer() {
                     <p>Jeudi & Dimanche: Fermé</p>
                 </Section>
             </Row>
-            <Center>Copyright © 2023 - Nessa'beauty | Politique de confidentialité & mentions légales</Center>
+            <Center>Copyright © 2023 - Nessa'beauty | <Link to='/nessabeauty/mention-legale'>Mention Légale</Link></Center>
         </Foot>
     );
 }

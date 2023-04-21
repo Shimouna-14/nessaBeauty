@@ -9,7 +9,7 @@ const Body = createGlobalStyle`
     }
     a{
         text-decoration: none;
-        color: black;
+        color: #DDCCC5;
     }
     p { font-size: 1.25em }
 `

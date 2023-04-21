@@ -2,7 +2,9 @@ import styled from 'styled-components'
 import '../styles/style.css'
 import Logo from '../images/logo.png'
 import { useState } from 'react'
-import IconChevron from '../images/chevron-down-solid.webp'
+import IconChevron from '../images/chevron.png'
+import { HashLink } from 'react-router-hash-link';
+import { Link } from 'react-router-dom'
 
 const Head = styled.header`
     background-color: #16212E;
@@ -24,7 +26,7 @@ const Div = styled.div`
 
 const Chevron = styled.img`
     display: none;
-    height: 2.5em;
+    height: 2em;
     width: auto;
     padding-left: 10px;
     cursor: pointer;
@@ -55,18 +57,11 @@ const Menu = styled.div`
 `
 
 const Img = styled.img`
-    height: 8em;
+    height: 9em;
     width: auto;
     @media screen and (max-width: 600px) {
         height: 6em;
         width: auto;
-    }
-`
-
-const Margin = styled.p`
-    margin: auto 25px;
-    @media screen and (max-width: 600px) {
-        margin: inherit;
     }
 `
 
@@ -85,17 +80,17 @@ function Header() {
                         <>
                             <Chevron src={IconChevron} alt="Icon chevron down solid" onClick={() => setIsOpen(true)} />
                             <MenuMobile>
-                                <p className='beige'>Accueil</p>
-                                <p className='beige'>Prestations</p>
+                                <Link to='/nessabeauty'><p className='beige'>Accueil</p></Link>
+                                <HashLink smooth to={'/nessabeauty/#prestation'}><p className='beige'>Prestations</p></HashLink>
                             </MenuMobile>
                         </>
                     )}
                     <Menu>
-                        <p className='beige'>Accueil</p>
-                        <Margin className='beige'>Prestations</Margin>
+                        <Link to='/nessabeauty'><p className='beige'>Accueil</p></Link>
+                        <HashLink smooth to={'/nessabeauty/#prestation'}><p className='beige'>Prestations</p></HashLink>
                     </Menu>
                 </nav>
-                <Img className='logo' src={Logo} alt='Logo Nessa Beauty' />
+                <Link to='/nessabeauty'><Img className='logo' src={Logo} alt='Logo Nessa Beauty' /></Link>
             </Div>
         </Head>
     )
