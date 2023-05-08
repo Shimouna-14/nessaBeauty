@@ -1,7 +1,7 @@
 import Footer from "./Footer";
 import Header from "./Header";
-import Home from "./Home";
-import MentionLegale from "./MentionLegale";
+import Home from "../pages/Home";
+import MentionLegale from "../pages/MentionLegale";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
 
