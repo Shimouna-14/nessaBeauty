@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.css": "/nessabeauty/static/css/main.e017deed.css",
-    "main.js": "/nessabeauty/static/js/main.04c8e3c9.js",
+    "main.css": "/nessabeauty/static/css/main.7dfd0519.css",
+    "main.js": "/nessabeauty/static/js/main.bad967e7.js",
     "static/media/MonteCarlo-Regular.ttf": "/nessabeauty/static/media/MonteCarlo-Regular.6a66bbaa0cb0dc5f042d.ttf",
     "static/media/AbhayaLibre-Regular.ttf": "/nessabeauty/static/media/AbhayaLibre-Regular.be8bb6faff221a9b6134.ttf",
-    "static/media/3d-stepping-stones-in-the-ocean-at-sunset.jpg": "/nessabeauty/static/media/3d-stepping-stones-in-the-ocean-at-sunset.8db337d1bd1f83cdba00.jpg",
-    "static/media/logo.png": "/nessabeauty/static/media/logo.926536aee8920e7896fc.png",
+    "static/media/3d-stepping-stones-in-the-ocean-at-sunset.webp": "/nessabeauty/static/media/3d-stepping-stones-in-the-ocean-at-sunset.3b66deba9e0c42363366.webp",
+    "static/media/logo.webp": "/nessabeauty/static/media/logo.7e1c8b4f38c6e0613476.webp",
     "index.html": "/nessabeauty/index.html",
-    "main.e017deed.css.map": "/nessabeauty/static/css/main.e017deed.css.map",
-    "main.04c8e3c9.js.map": "/nessabeauty/static/js/main.04c8e3c9.js.map"
+    "static/media/chevron.svg": "/nessabeauty/static/media/chevron.55b99f783346c8c989cd88d28a36ff33.svg",
+    "main.7dfd0519.css.map": "/nessabeauty/static/css/main.7dfd0519.css.map",
+    "main.bad967e7.js.map": "/nessabeauty/static/js/main.bad967e7.js.map"
   },
   "entrypoints": [
-    "static/css/main.e017deed.css",
-    "static/js/main.04c8e3c9.js"
+    "static/css/main.7dfd0519.css",
+    "static/js/main.bad967e7.js"
   ]
 }
