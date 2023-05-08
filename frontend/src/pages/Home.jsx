@@ -1,6 +1,6 @@
 import '../styles/style.css'
 import styled from 'styled-components'
-import ImgStone from '../images/3d-stepping-stones-in-the-ocean-at-sunset.jpg'
+import ImgStone from '../images/3d-stepping-stones-in-the-ocean-at-sunset.webp'
 import { EpilationsPresta, SoinsPresta, ModelagesPresta, ForfaitsPreta, EpilationsHommePresta } from '../components/Prestation'
 import { Epilations, Soins, Modelages, Forfaits, EpilationsHomme } from '../components/ListPrestation'
 
@@ -92,7 +92,6 @@ const Rectangle = styled.div`
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-bottom: 7em;
     padding-bottom: 5em;
     @media screen and (max-width: 600px) {}
 `
@@ -124,7 +123,7 @@ const Section = styled.section`
     align-items: center;
 `
 const Span = styled.span`
-    width: 1px;
+    width: 2px;
     height: 580px;
     background: #000;
     @media screen and (max-width: 800px) { display: none; }
@@ -143,6 +142,29 @@ const WidthCenter = styled.div`
     @media screen and (max-width: 600px) { width: 90%; }
 `
 
+const Carrousel = styled.section`
+    height: 20em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    @media screen and (max-width: 800px) {
+        flex-direction: column;
+        height: auto;
+    }
+`
+
+const Photo = styled.div`
+    width: 214.4px;
+    height: 67%;
+    background: #000;
+    @media screen and (max-width: 800px) {
+        width: 300px;
+        height: 300px;
+        margin: 50px 0;
+    }
+`
+
 function Home() {
     return(
         <>
@@ -154,7 +176,7 @@ function Home() {
                     <H2>Professionnelle de la beauté depuis 2006, forte de mon expérience, je vous propose des soins visage et corps, épilation.</H2>
                 </TxtPresentation>
                 </Presention>
-                <SemiCirle id='prestation'> <H3>Nessa'beauty</H3> </SemiCirle>
+                <SemiCirle id='prestation'><H3>Nessa'beauty</H3></SemiCirle>
                 <Rectangle>
                     <TxtTarif>
                         <ThreeBloc>
@@ -214,6 +236,11 @@ function Home() {
                         </WidthCenter>
                     </TxtTarif>
                 </Rectangle>
+                <Carrousel>
+                    <Photo></Photo>
+                    <Photo></Photo>
+                    <Photo></Photo>
+                </Carrousel>
             </main>
         </>
     );

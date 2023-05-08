@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 import '../styles/style.css'
-import Logo from '../images/logo.png'
+import Logo from '../images/logo.webp'
 import { useState } from 'react'
-import IconChevron from '../images/chevron.png'
+import IconChevron from '../images/chevron.svg'
 import { HashLink } from 'react-router-hash-link';
 import { Link } from 'react-router-dom'
 
