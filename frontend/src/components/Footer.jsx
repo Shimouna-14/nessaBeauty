@@ -37,15 +37,15 @@ function Footer() {
             <Row>
                 <Section>
                     <p>Adresse de l'esthéticienne</p>
-                    <div>
-                        <Maps src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=17%20rue%20Paul%20Lorillon%2095440%20Ecouen%20+(Nessa'beauty)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                    <div rel="preload">
+                        <Maps title="maps" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=17%20rue%20Paul%20Lorillon%2095440%20Ecouen%20+(Nessa'beauty)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
                             <a href="https://www.maps.ie/distance-area-calculator.html">measure distance on map</a>
                         </Maps>
                     </div>
                 </Section>
                 <Section>
                     <p>Contact :</p>
-                    <p>06 34 20 46 62</p>
+                    <p>07 66 48 19 31</p>
                     <p>LAVANIER Phylicia</p>
                     <p>Lundi - Samedi: 10h - 19h</p>
                     <p>Jeudi & Dimanche: Fermé</p>

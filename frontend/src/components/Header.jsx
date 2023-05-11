@@ -26,8 +26,8 @@ const Div = styled.div`
 
 const Chevron = styled.img`
     display: none;
-    height: 2em;
-    width: auto;
+    height: 32px;
+    width: 32px;
     padding-left: 10px;
     cursor: pointer;
     @media screen and (max-width: 600px) {
@@ -58,10 +58,10 @@ const Menu = styled.div`
 
 const Img = styled.img`
     height: 9em;
-    width: auto;
+    width: 9em;
     @media screen and (max-width: 600px) {
         height: 6em;
-        width: auto;
+        width: 6em;
     }
 `
 
@@ -69,7 +69,7 @@ function Header() {
     const [isOpen, setIsOpen] = useState(true)
 
     return (
-        <Head>
+        <Head >
             <Div>
                 <nav>
                     {isOpen ? (
@@ -90,7 +90,7 @@ function Header() {
                         <HashLink smooth to={'/nessabeauty/#prestation'}><p className='beige'>Prestations</p></HashLink>
                     </Menu>
                 </nav>
-                <Link to='/nessabeauty'><Img className='logo' src={Logo} alt='Logo Nessa Beauty' /></Link>
+                <Link rel="preload" to='/nessabeauty'><Img className='logo' src={Logo} alt='Logo Nessa Beauty' /></Link>
             </Div>
         </Head>
     )

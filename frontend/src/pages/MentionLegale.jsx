@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { Helmet } from 'react-helmet';
 
 const Main = styled.main`
     display: flex;
@@ -14,6 +15,9 @@ const Section = styled.section`
 function MentionLegale() {
     return(
         <>
+            <Helmet>
+                <title>Nessa'beauty | Mention Légale</title>
+            </Helmet>
             <Main>
                 <Section className="size">
                     <h1>MENTIONS LEGALES :</h1>
@@ -25,7 +29,7 @@ function MentionLegale() {
                     <p>Le site nessabeauty.com est l'unique propriété de <strong>TPE </strong>
                     <strong>Nessa'beauty</strong>, qui le fourni.</p>
 
-                    <p><strong>TPE</strong><strong> Nessa'beauty</strong> - N° Tel: <strong>0634204662</strong></p>
+                    <p><strong>TPE</strong><strong> Nessa'beauty</strong> - N° Tel: <strong>0766481931</strong></p>
 
                     <p><strong>17 rue Paul Lorillon</strong> <strong>95440 Ecouen</strong></p>
                     <p>Inscrite au Registre du Commerce et des Sociétés(RCS) au numéro <strong>91536041600019</strong></p>

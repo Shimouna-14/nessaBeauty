@@ -13,11 +13,12 @@ const Img = styled.div`
 `
 
 const Stone = styled.img`
-    height: auto;
+    height: 302px;
     width: 70%;
     border-radius: 3px;
     @media screen and (max-width: 600px) {
         width: 100%;
+        height: 130px;
         border-radius: 0;
     }
 `
@@ -74,7 +75,7 @@ const SemiCirle = styled.div`
 const H3 = styled.h3`
     font-size: 10em;
     margin: 0;
-    font-family: 'MonteCarlo';
+    font-family: 'MonteCarlo', cursive;
     color: #E9E1DA;
     @media screen and (max-width: 1023px) {
         padding-top: 0.5em;
@@ -93,7 +94,6 @@ const Rectangle = styled.div`
     align-items: center;
     width: 100%;
     padding-bottom: 5em;
-    @media screen and (max-width: 600px) {}
 `
 
 const TxtTarif = styled.section`
@@ -169,7 +169,7 @@ function Home() {
     return(
         <>
             <main>
-                <Img><Stone src={ImgStone} alt='3d stepping stones in the ocean at sunset' /></Img>
+                <Img><Stone rel='preload' src={ImgStone} alt='3d stepping stones in the ocean at sunset' /></Img>
                 <Presention>
                 <TxtPresentation>
                     <H1>Esthéticienne à domicile sur la commune Écouen</H1>

@@ -5,7 +5,7 @@ const Body = createGlobalStyle`
     body {
         margin: 0;
         padding: 0;
-        font-family: 'Abhaya'
+        font-family: 'Abhaya', cursive
     }
     a{
         text-decoration: none;
