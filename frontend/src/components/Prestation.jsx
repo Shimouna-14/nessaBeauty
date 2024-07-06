@@ -1,128 +1,57 @@
 import '../styles/style.css'
-import styled from 'styled-components'
-import PropTypes from 'prop-types';
 
-const Epilations = styled.div`
-    width: 65%;
-    @media screen and (max-width: 1023px) { width: 80%; }
-    @media screen and (max-width: 600px) { width: 90%; }
-`
-
-const Soins = styled.div` width: 100%; `
-
-const Modelages = styled.div` width: 100%; `
-
-const CenterForfaits = styled.div` width: 100%; `
-
-const CenterHomme = styled.div`width: 100%; `
-
-export function EpilationsPresta({ id, namePresta, price }) {
+export function EpilationsPresta({ id, name, price }) {
     return(
         <>
-            <Epilations className="margin" key={id}>
-                <p>{namePresta}</p>
-                <p>{price}</p>
-            </Epilations>
+            <div className="flex justify-between w-[65%] md:w-[80%] sm:w-[90%]" key={id}>
+                <p className='m-0.5'>{name}</p>
+                <p className='m-0.5'>{price}</p>
+            </div>
         </>
     )
 };
 
-EpilationsPresta.prototype = {
-    id: PropTypes.string.isRequired,
-    namePresta: PropTypes.string.isRequired,
-    price: PropTypes.string.isRequired
-};
-EpilationsPresta.defaultProps = {
-    id: "",
-    namePresta: "",
-    price: "",
-};
-
-export function SoinsPresta({ id, namePresta, price }) {
+export function SoinsPresta({ id, name, price }) {
     return(
         <>
-            <Soins className="margin" key={id}>
-                <p>{namePresta}</p>
-                <p>{price}</p>
-            </Soins>
+            <div className="flex justify-between " key={id}>
+                <p className='m-0.5'>{name}</p>
+                <p className='m-0.5'>{price}</p>
+            </div>
         </>
     )
 };
 
-SoinsPresta.prototype = {
-    id: PropTypes.string.isRequired,
-    namePresta: PropTypes.string.isRequired,
-    price: PropTypes.string.isRequired
-};
-SoinsPresta.defaultProps = {
-    id: "",
-    namePresta: "",
-    price: "",
-};
-
-
-export function ModelagesPresta({ id, namePresta, price }) {
+export function ModelagesPresta({ id, name, price }) {
     return(
         <>
-            <Modelages className="margin" key={id}>
-                <p>{namePresta}</p>
-                <p>{price}</p>
-            </Modelages>
+            <div className="flex justify-between" key={id}>
+                <p className='m-0.5'>{name}</p>
+                <p className='m-0.5'>{price}</p>
+            </div>
         </>
     )
 };
 
-ModelagesPresta.prototype = {
-    id: PropTypes.string.isRequired,
-    namePresta: PropTypes.string.isRequired,
-    price: PropTypes.string.isRequired
-};
-ModelagesPresta.defaultProps = {
-    id: "",
-    namePresta: "",
-    price: "",
-};
 
-export function ForfaitsPreta({ id, namePresta, price }) {
+export function ForfaitsPreta({ id, name, price }) {
     return(
         <>
-            <CenterForfaits className="margin" key={id}>
-                <p>{namePresta}</p>
-                <p>{price}</p>
-            </CenterForfaits>
+            <div className="flex justify-between" key={id}>
+                <p className='m-0.5'>{name}</p>
+                <p className='m-0.5'>{price}</p>
+            </div>
         </>
     )
 };
 
-ForfaitsPreta.prototype = {
-    id: PropTypes.string.isRequired,
-    namePresta: PropTypes.string.isRequired,
-    price: PropTypes.string.isRequired
-};
-ForfaitsPreta.defaultProps = {
-    id: "",
-    namePresta: "",
-    price: "",
-};
-
-export function EpilationsHommePresta({ id, namePresta, price }) {
+export function EpilationsHommePresta({ id, name, price }) {
     return(
         <>
-            <CenterHomme className="margin" key={id}>
-                <p>{namePresta}</p>
-                <p>{price}</p>
-            </CenterHomme>
+            <div className="flex justify-between" key={id}>
+                <p className='m-0.5'>{name}</p>
+                <p className='m-0.5'>{price}</p>
+            </div>
         </>
     )
-};
-
-EpilationsHommePresta.prototype = {
-    id: PropTypes.string.isRequired,
-    namePresta: PropTypes.string.isRequired,
-    price: PropTypes.string.isRequired
-};
-EpilationsHommePresta.defaultProps = {
-    id: "",
-    namePresta: "",
-    price: "",
 };

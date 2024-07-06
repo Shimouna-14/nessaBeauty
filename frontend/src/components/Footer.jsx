@@ -1,58 +1,30 @@
-import styled from "styled-components";
 import { Link } from 'react-router-dom'
-
-const Foot = styled.footer`
-    height: 22em;
-    width: 100%;
-    background-color: #16212e;
-    color: #DDCCC5;
-    @media screen and (max-width: 600px) { height: 37em; }
-`
-
-const Row = styled.div`
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    @media screen and (max-width: 600px) { flex-direction: column-reverse; }
-`
-
-const Maps = styled.iframe`
-`
-
-const Section = styled.section`
-    @media screen and (max-width: 600px) { text-align: center; }
-`
-
-const Center = styled.p`
-    text-align: center;
-    margin: 26px 40px;
-`
 
 function Footer() {
     let today = new Date();
     let year = today.getUTCFullYear();
 
     return (
-        <Foot>
-            <Row>
-                <Section>
-                    <p>Adresse de l'esthéticienne</p>
+        <footer className="h-[22em] sm:h-[36em] bg-blue text-beige mt-16">
+            <div className='flex justify-around items-center sm:flex-col-reverse'>
+                <section className='sm:text-center'>
+                    <p className='text-2xl my-6'>Adresse de l'esthéticienne</p>
                     <div rel="preload">
-                        <Maps title="maps" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=17%20rue%20Paul%20Lorillon%2095440%20Ecouen%20+(Nessa'beauty)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                        <iframe title="maps" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=17%20rue%20Paul%20Lorillon%2095440%20Ecouen%20+(Nessa'beauty)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
                             <a href="https://www.maps.ie/distance-area-calculator.html">measure distance on map</a>
-                        </Maps>
+                        </iframe>
                     </div>
-                </Section>
-                <Section>
-                    <p>Contact :</p>
+                </section>
+                <section className='sm:text-center'>
+                    <p className='mt-10'>Contact :</p>
                     <p>07 66 48 19 31</p>
-                    <p>LAVANIER Phylicia</p>
-                    <p>Lundi - Samedi: 10h - 19h</p>
+                    <p>Phylicia</p>
+                    <p className='mt-8 '>Lundi - Samedi: 10h - 19h</p>
                     <p>Jeudi & Dimanche: Fermé</p>
-                </Section>
-            </Row>
-            <Center>Copyright © {year} - Nessa'beauty | <Link to='/nessabeauty/mention-legale'>Mention Légale</Link></Center>
-        </Foot>
+                </section>
+            </div>
+            <p className='text-center my-10'>Copyright © {year} - Nessa'beauty | <Link to='/mention-legale'>Mention Légale</Link></p>
+        </footer>
     );
 }
 

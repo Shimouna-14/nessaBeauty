@@ -1,98 +1,39 @@
-import styled from 'styled-components'
 import '../styles/style.css'
 import Logo from '../images/logo.webp'
 import { useState } from 'react'
-import IconChevron from '../images/chevron.svg'
+import Chevron from '../images/chevron.svg'
 import { HashLink } from 'react-router-hash-link';
 import { Link } from 'react-router-dom'
 
-const Head = styled.header`
-    background-color: #16212E;
-    height: 11em;
-    display: flex;
-    justify-content: center;
-    @media screen and (max-width: 600px) {
-        height: 7em;
-    }
-`
-
-const Div = styled.div`
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 90%;
-    height: auto;
-`
-
-const Chevron = styled.img`
-    display: none;
-    height: 32px;
-    width: 32px;
-    padding-left: 10px;
-    cursor: pointer;
-    @media screen and (max-width: 600px) {
-        display: initial;
-    }
-`
-
-const MenuMobile = styled.div`
-    display: none;
-    @media screen and (max-width: 600px) {
-        display: initial;
-        width: 100%;
-        background-color: #16212E;
-        position: absolute;
-        left: 0;
-        top: 7em;
-        z-index: 2;
-    }
-`
-
-const Menu = styled.div`
-    display: flex;
-    justify-content: space-between;
-    @media screen and (max-width: 600px) {
-        display: none;
-    }
-`
-
-const Img = styled.img`
-    height: 9em;
-    width: 9em;
-    @media screen and (max-width: 600px) {
-        height: 6em;
-        width: 6em;
-    }
-`
 
 function Header() {
     const [isOpen, setIsOpen] = useState(true)
 
     return (
-        <Head >
-            <Div>
+        <header className='bg-blue h-44 flex justify-center sm:h-28'>
+            <div className='flex justify-between items-center w-11/12 h-auto'>
                 <nav>
                     {isOpen ? (
                         <>
-                            <Chevron src={IconChevron} alt="Icon chevron down solid" onClick={() => setIsOpen(false)} />
+                            <img className='hidden h-12 w-12 p-2.5 cursor-pointer sm:inline' src={Chevron} alt="Icon chevron down solid" onClick={() => setIsOpen(false)} />
                         </>
                     ) : (
                         <>
-                            <Chevron src={IconChevron} alt="Icon chevron down solid" onClick={() => setIsOpen(true)} />
-                            <MenuMobile>
-                                <Link to='/nessabeauty'><p className='beige'>Accueil</p></Link>
-                                <HashLink smooth to={'/nessabeauty/#prestation'}><p className='beige'>Prestations</p></HashLink>
-                            </MenuMobile>
+                            <img className='hidden h-12 w-12 p-2.5 cursor-pointer sm:inline' src={Chevron} alt="Icon chevron down solid" onClick={() => setIsOpen(true)} />
+                            <div className='w-full absolute bg-blue left-0 top-28 pl-9 lg:hidden'>
+                                <Link to='/nessabeauty'><p className='beige '>Accueil</p></Link>
+                                <HashLink smooth to={'/nessabeauty/#prestation'}><p className='beige py-5'>Prestations</p></HashLink>
+                            </div>
                         </>
                     )}
-                    <Menu>
-                        <Link to='/nessabeauty'><p className='beige'>Accueil</p></Link>
-                        <HashLink smooth to={'/nessabeauty/#prestation'}><p className='beige'>Prestations</p></HashLink>
-                    </Menu>
+                    <div className='flex justify-between sm:hidden'>
+                        <Link to='/nessabeauty'><p className='beige text-3xl pl-10'>Accueil</p></Link>
+                        <HashLink smooth to={'/nessabeauty/#prestation'}><p className='beige text-3xl pl-10'>Prestations</p></HashLink>
+                    </div>
                 </nav>
-                <Link rel="preload" to='/nessabeauty'><Img className='logo' src={Logo} alt='Logo Nessa Beauty' /></Link>
-            </Div>
-        </Head>
+                <Link rel="preload" to='/nessabeauty'><img className='h-36 sm:h-24' src={Logo} alt='Logo Nessa Beauty' /></Link>
+            </div>
+        </header>
     )
 }
 
