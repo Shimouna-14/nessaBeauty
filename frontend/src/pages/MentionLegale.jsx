@@ -3,7 +3,7 @@ function MentionLegale() {
     return( 
         <>
             <main className="flex flex-col items-center text-sm">
-                <section className="w-[70%]">
+                <section className="w-[80%]">
                     <h1 className="my-7 text-3xl text-center">MENTIONS LEGALES :</h1>
                     <p >Correspondant aux obligations des articles 6-III et 19 de la Loi n° 2004-575 du 21 juin 2004 concerçant
                         la Confiance de l'économie numérique, dite L.C.E.N, nous informons les utilisateurs du site internet : <strong>nessabeauty.com</strong>. <br /> Les infos qui suivent : </p>
@@ -30,7 +30,7 @@ function MentionLegale() {
                     <p>Les Mentions Légales ont été réalisées via <strong>https://www.generateur-de-mentions-legales.com/</strong></p>
                 </section>
 
-                <section className="w-[70%]">
+                <section className="w-[80%]">
                     <p className='my-4'><strong>2. Présentation et principe :</strong></p>
                     <p>Tout internaute qui utilise le site internet:  <strong>nessabeauty.com</strong> est considéré comme usagée du site internet.
                         Le site suivant <strong>nessabeauty.com</strong> regroupe un ensemble de services, dans l'état, disponible pour les usagées.
@@ -42,7 +42,7 @@ function MentionLegale() {
                         En conséquence, l'utilisateur reconnaît utiliser ces informations données sous sa responsabilité exclusive.</p>
                 </section>
                 
-                <section className="w-[70%]">
+                <section className="w-[80%]">
                     <p className='my-4'><strong>3. Accessibilité Numérique :</strong></p>
                     <p>Le site internet <strong>nessabeauty.com</strong> est par principe accessible aux usagés 24/7,
                         sauf en cas d'interruption, prévu ou pas, pour les besoins de mise à jour ou force majeure.
@@ -52,7 +52,7 @@ function MentionLegale() {
                         quelle qu'en soit la nature. </p>
                 </section>
 
-                <section className="w-[70%]">
+                <section className="w-[80%]">
                     <p className='my-4'><strong>4. Droit de propriété intellectuelle :</strong></p>
                     <p><strong>NDEBY Véronique Chimène</strong> est le propriétaire unique de tous les droits de propriété intellectuelle ou détient les droits d'usage
                         sur l'intégralité des éléments accessibles sur le site web, tant structurellement que sur les articles et textes,
@@ -66,7 +66,7 @@ function MentionLegale() {
                         passible de poursuite d'après les dispositions des multiples articles L.335-2 et suivants du Code de Propriété Intellectuelle.</p>
                 </section>
 
-                <section className="w-[70%]">
+                <section className="w-[80%]">
                     <p className='my-4'><strong>5. Protection des personnes &amp; biens - Utilisation des données personnelles :</strong></p>
                     <p>En France, les données personnelles sont notamment protégées par la
                         loi n° 78-87 du 6 janvier 1978 , la loi n° 2004-801 datant du 6 août

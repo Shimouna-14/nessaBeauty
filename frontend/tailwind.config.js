@@ -9,7 +9,9 @@ export default {
         colors: {
           'light-beige': '#E9E1DA',
           'beige' : '#DDCCC5',
-          'blue': '#16212E'
+          'blue': '#16212E',
+          "brown": "#C0A89C",
+          "white": "F4F1EB"
         },
         
         screens: {

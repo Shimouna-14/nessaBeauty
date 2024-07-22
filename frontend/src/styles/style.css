@@ -25,10 +25,25 @@ a{
   text-decoration: none;
   color: #DDCCC5;
 }
-p { font-size: 1.25em }
 
-.shadow-presentation { 
+.shadow { 
   box-shadow: rgba(213, 180, 167, 0.847) 0px 4px 4px;
 }
 
 .monteCarlo { font-family: 'MonteCarlo', cursive; }
+
+/* Afficher des premiers paragraphes - section Laser Diode */
+section.bg-beige:nth-child(7) > section:nth-child(2) > section:nth-child(1) > section:nth-child(2) > p:nth-child(1),
+section.bg-beige:nth-child(7) > section:nth-child(2) > section:nth-child(1) > section:nth-child(3) > p:nth-child(1),
+section.bg-beige:nth-child(8) > section:nth-child(2) > section:nth-child(1) > section:nth-child(2) > p:nth-child(1),
+section.bg-beige:nth-child(8) > section:nth-child(2) > section:nth-child(1) > section:nth-child(3) > p:nth-child(1),
+section.bg-beige:nth-child(9) > section:nth-child(2) > section:nth-child(1) > section:nth-child(2) > p:nth-child(1),
+section.bg-beige:nth-child(9) > section:nth-child(2) > section:nth-child(1) > section:nth-child(3) > p:nth-child(1),
+section.bg-beige:nth-child(10) > section:nth-child(2) > section:nth-child(1) > section:nth-child(2) > p:nth-child(1),
+section.bg-beige:nth-child(10) > section:nth-child(2) > section:nth-child(1) > section:nth-child(3) > p:nth-child(1),
+section.bg-beige:nth-child(11) > section:nth-child(2) > section:nth-child(1) > section:nth-child(2) > p:nth-child(1),
+section.bg-beige:nth-child(11) > section:nth-child(2) > section:nth-child(1) > section:nth-child(3) > p:nth-child(1),
+section.bg-beige:nth-child(12) > section:nth-child(2) > section:nth-child(1) > section:nth-child(2) > p:nth-child(1),
+section.bg-beige:nth-child(12) > section:nth-child(2) > section:nth-child(1) > section:nth-child(3) > p:nth-child(1) {
+  color: black;
+}
