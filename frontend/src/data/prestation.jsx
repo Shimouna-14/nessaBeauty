@@ -88,7 +88,7 @@ export const Corps = [
     {id: 2, name: "Décolleté", unique: "140 €", forfait: "840 €*"},
     {id: 3, name: "Dos - haut", unique: "70 €", forfait: "660 €*"},
     {id: 4, name: "Dos - bas", unique: "110 €", forfait: "420 €*"},
-    {id: 5, name: "Dos entier", unique: "170 €", forfait: "1020 €*"},
+    {id: 5, name: "Dos entier/Torse", unique: "170 €", forfait: "1020 €*"},
     {id: 6, name: "Fesses", unique: "70 €", forfait: "420 €*"},
     {id: 7, name: "Ligne abdominale", unique: "40 €", forfait: "240 €"},
     {id: 8, name: "Ligne ventrale", unique: "40 €", forfait: "240 €"},
